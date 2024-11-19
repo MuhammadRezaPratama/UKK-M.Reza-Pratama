@@ -1,0 +1,259 @@
+/* Reset */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+.logo {
+    width: 150px;
+    height: auto;
+    margin-left: 20px;
+}
+
+header {
+    background-color: #cac4c0;
+    padding: 10px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    margin-right: 20px;
+    background-color: blanchedalmond;
+    color: black;
+    text-align: center;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+}
+
+.btn-order {
+    background-color: #6D2A00;
+    color: white;
+    display: flex;
+    text-align: center;
+    padding: 10px 30px;
+    border-radius: 5px;
+} 
+
+/* Hero Section */
+#hero {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px;
+    background-color: white;
+}
+
+.hero-image {
+    width: 50%;
+    max-width: 555px;
+    height: auto;
+    padding: 50px 0;
+}
+
+.hero-conten {
+    max-width: 700px;
+    font-size: 2rem;
+}
+
+.hero-content h1 {
+    display: block;
+    font-size: 6rem;
+}
+
+.btn-primary {
+    background-color: #6D2A00;
+    color: white;
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+/* Product Section */
+#products h2 {
+    padding: 40px 0 0 40px;
+    background-color: #AB886D;
+    font-size: 30px;
+    text-align: center;
+}
+
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 100px;
+    background-color: #AB886D;
+    font-size: 15px;
+}
+
+.product {
+    text-align: center;
+}
+
+.product img {
+    width: auto;
+    height: 300px;
+    border-radius: 5px;
+}
+
+/* Testimonial Section */
+#testimonials {
+    background-color: #554133;
+    padding: 40px;
+    text-align: center;
+    color: white;
+}
+
+.testimonials {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.testimonial img {
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
+} 
+
+/* Contact Section */
+#contact {
+    background-color: #352f2f;
+    padding: 40px;
+    text-align: center;
+    display: block;
+    color: WHITE;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    max-width: 700px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* Footer */  
+footer {
+    padding: 20px;
+    text-align: center;
+    background-color: #75706d;
+    color: white;
+    align-items: center;
+}
+
+footer p {
+    margin: 10px 0;
+}
+
+.footer-icons {
+    margin-bottom: 10px 0;
+}
+
+.socials-icons a img {
+    width: 30px;
+    margin: 0 10px;
+    margin: 0 auto;
+}
+
+/* Media Queriess for responsivess */
+@media (max-width: 768px) {
+    nav ul {
+        display: none;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+
+    .btn-order {
+        margin-top: 10px;
+    }
+
+    #hero {
+        flex-direction: column; 
+        text-align: center;
+    }
+
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .btn-primary {
+        margin-bottom: 10px;
+    }
+
+    #products h2 {
+        text-align: center;
+    }
+
+    .product-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .testimonials {
+        flex-direction: column;
+    }
+
+    .testimonial {
+        margin: auto;
+    }
+
+    form input,
+    form textarea {
+        width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-content h1 {
+        font-size: 1.5rem;
+    }
+
+    .product {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .testimonial {
+        width: 100%;
+    }
+}
